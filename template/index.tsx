@@ -1,11 +1,11 @@
 import './style.css';
-import { Component, h } from 'preact';
+import * as React from 'react';
 
 interface AppProperties {}
 
 interface AppState {}
 
-export default class App extends Component<AppProperties, AppState> {
+export default class App extends React.Component<AppProperties, AppState> {
   render() {
     return (
       <div>

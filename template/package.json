@@ -1,7 +1,7 @@
 {
-  "name": "simple",
+  "name": "simple-react",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.tsx",
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV=production && yarn run -s serve || yarn run -s dev",
@@ -10,11 +10,9 @@
     "dev": "preact watch",
     "lint": "eslint src"
   },
-  "eslintConfig": {
-    "extends": "eslint-config-synacor",
-    "eslintIgnore": ["build/*"]
-  },
   "devDependencies": {
+    "@types/react": "^16.0.7",
+    "@types/react-dom": "^15.5.5",
     "if-env": "^1.0.0",
     "preact-cli": "^1.4.1",
     "preact-cli-plugin-typescript": "^0.2.2",
